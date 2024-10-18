@@ -61,9 +61,9 @@ RUN set -ex; \
     ; \
     \
 # pecl will claim success even if one install fails, so we need to perform each install separately
-    pecl install APCu-5.1.22; \
-    pecl install memcached-3.2.0; \
-    pecl install redis-5.3.7; \
+    pecl install APCu-5.1.24; \
+    pecl install memcached-3.3.0; \
+    pecl install redis-6.1.0; \
     pecl install imagick-3.7.0; \
     \
     docker-php-ext-enable \
@@ -108,7 +108,7 @@ RUN { \
 
 VOLUME /var/www/html
 
-ENV NEXTCLOUD_VERSION 25.0.6
+ENV NEXTCLOUD_VERSION 25.0.13
 
 RUN set -ex; \
     apk add --no-cache --virtual .fetch-deps \
