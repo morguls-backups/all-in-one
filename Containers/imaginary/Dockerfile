@@ -7,7 +7,7 @@ RUN set -ex; \
         vips-jxl \
         vips-poppler \
         build-base; \
-    go install github.com/h2non/imaginary@b632dae8cc321452c3f85bcae79c580b1ae1ed84;
+    go install github.com/h2non/imaginary@1d4e251cfcd58ea66f8361f8721d7b8cc85002a3;
 
 FROM alpine:3.17.3
 RUN set -ex; \
